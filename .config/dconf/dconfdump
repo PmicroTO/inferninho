@@ -1,0 +1,402 @@
+[com/github/wwmm/easyeffects]
+last-used-input-preset='Presets'
+last-used-output-preset='Presets'
+window-fullscreen=false
+window-height=1048
+window-maximized=false
+window-width=2560
+
+[com/github/wwmm/easyeffects/streaminputs]
+input-device='alsa_input.pci-0000_00_14.2.9.analog-stereo'
+plugins=['rnnoise', 'stereo_tools']
+
+[com/github/wwmm/easyeffects/streaminputs/rnnoise]
+bypass=false
+
+[com/github/wwmm/easyeffects/streaminputs/stereotools]
+bypass=false
+mode='LR > L+R (Mono Sum L+R)'
+
+[com/github/wwmm/easyeffects/streamoutputs]
+output-device='alsa_output.pci-0000_00_14.2.9.analog-stereo'
+
+[com/mattjakeman/ExtensionManager]
+last-used-version='0.4.0'
+
+[org/gnome/Console]
+last-window-size=(640, 524)
+theme='auto'
+
+[org/gnome/TextEditor]
+discover-settings=true
+highlight-current-line=true
+restore-session=false
+show-grid=false
+show-map=false
+
+[org/gnome/cheese]
+burst-delay=1000
+camera='C505 HD Webcam'
+photo-x-resolution=1280
+photo-y-resolution=960
+video-x-resolution=1280
+video-y-resolution=960
+
+[org/gnome/control-center]
+last-panel='keyboard'
+window-state=(1280, 1048, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', '26eca112-f338-488d-ab59-c28e52f9dd23', '58ee5463-5ab4-4a44-8004-785f25d6036c', '09777f85-9792-45f0-983f-96714d0a56d7', '46e2c987-9e26-4ad9-8c30-27ee649ce805', 'aace8d50-6f63-4431-967d-99d74c5b280c']
+
+[org/gnome/desktop/app-folders/folders/09777f85-9792-45f0-983f-96714d0a56d7]
+apps=['org.gnome.Settings.desktop', 'com.github.wwmm.easyeffects.desktop', 'calf.desktop', 'ulauncher.desktop']
+name='Unnamed Folder'
+
+[org/gnome/desktop/app-folders/folders/26eca112-f338-488d-ab59-c28e52f9dd23]
+apps=['org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.TextEditor.desktop', 'gnome-extension-manager_gnome-extension-manager.desktop']
+name='Accessories'
+
+[org/gnome/desktop/app-folders/folders/46e2c987-9e26-4ad9-8c30-27ee649ce805]
+apps=['thunderbird_thunderbird.desktop', 'org.gnome.Pomodoro.desktop', 'codium_codium.desktop']
+name='Unnamed Folder'
+
+[org/gnome/desktop/app-folders/folders/58ee5463-5ab4-4a44-8004-785f25d6036c]
+apps=['libreoffice-impress.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'gnome-system-monitor.desktop', 'fish.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/aace8d50-6f63-4431-967d-99d74c5b280c]
+apps=['telegram-desktop_telegram-desktop.desktop', 'discord_discord.desktop', 'fluffychat_fluffychat.desktop']
+name='Internet'
+
+[org/gnome/desktop/background]
+picture-options='zoom'
+picture-uri='/home/lucio/.config/background'
+picture-uri-dark='/home/lucio/.config/background'
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us+intl'), ('xkb', 'us')]
+sources=[('xkb', 'us'), ('xkb', 'us+intl')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+document-font-name='Liberation Sans 11'
+enable-animations=true
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='Liberation Sans 11'
+monospace-font-name='Liberation Mono 10'
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher']
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
+application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/ulauncher]
+application-id='ulauncher.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/peripherals/trackball]
+scroll-wheel-emulation-button=8
+
+[org/gnome/desktop/session]
+idle-delay=uint32 720
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+move-to-workspace-1=['<Alt><Super>1']
+move-to-workspace-2=['<Alt><Super>2']
+move-to-workspace-3=['<Alt><Super>3']
+move-to-workspace-4=['<Alt><Super>4']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+toggle-fullscreen=['<Super>0']
+toggle-maximized=@as []
+
+[org/gnome/evince/default]
+window-ratio=(1.0750520547763884, 1.2447737911072885)
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=1001
+window-width=640
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=false
+network-total-in-bits=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(1280, 1048, 20, 20)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[org/gnome/login-screen]
+enable-fingerprint-authentication=true
+enable-password-authentication=true
+enable-smartcard-authentication=false
+
+[org/gnome/mutter]
+dynamic-workspaces=false
+edge-tiling=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(640, 1048)
+
+[org/gnome/nm-applet/eap/3e25b40d-3f9d-43c9-939c-719a5c70bed6]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/8bd227df-23d4-4478-8898-e024ccd5f58a]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/ae9417d7-e1f5-4b59-850b-3622cbc939d2]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/dbb4fa61-3feb-4cb7-af50-81a44c11dce8]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/portal/filechooser/snap.telegram-desktop]
+last-folder-path='/home/lucio/Pictures/pfp'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+email=['<Super>m']
+www=['<Super>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>a'
+command='ulauncher-toggle'
+name='ulauncher'
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='suspend'
+
+[org/gnome/shell]
+app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'org.gnome.Terminal.desktop': <{'position': <4>}>, 'Utilities': <{'position': <5>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <6>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <7>}>, 'firefox_firefox.desktop': <{'position': <8>}>}]
+disabled-extensions=['just-perfection-desktop@just-perfection', 'background-logo@fedorahosted.org']
+enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt']
+welcome-dialog-last-shown-version='43.2'
+
+[org/gnome/shell/extensions/bedtime-mode]
+bedtime-mode-active=true
+color-tone-factor=80
+ondemand-button-location='menu'
+
+[org/gnome/shell/extensions/display-brightness-ddcutil]
+button-location=1
+ddcutil-sleep-multiplier=40.0
+decrease-brightness-shortcut=['<Control>XF86MonBrightnessDown']
+hide-system-indicator=true
+increase-brightness-shortcut=['<Control>XF86MonBrightnessUp']
+position-system-menu=3.0
+show-all-slider=false
+show-display-name=false
+show-osd=false
+step-change-keyboard=2.0
+
+[org/gnome/shell/extensions/just-perfection]
+accessibility-menu=false
+activities-button=false
+app-menu=false
+app-menu-icon=false
+dash-icon-size=32
+hot-corner=true
+panel=true
+panel-arrow=false
+panel-corner-size=1
+panel-in-overview=true
+ripple-box=false
+search=false
+show-apps-button=false
+startup-status=0
+theme=true
+window-demands-attention-focus=true
+window-picker-icon=false
+workspace=false
+workspaces-in-app-grid=false
+world-clock=false
+
+[org/gnome/shell/extensions/pop-shell]
+active-hint=false
+active-hint-border-radius=uint32 0
+fullscreen-launcher=false
+gap-inner=uint32 0
+gap-outer=uint32 0
+hint-color-rgba='rgb(255,0,0)'
+tile-by-default=true
+
+[org/gnome/shell/keybindings]
+toggle-application-view=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1675516542
+first-run=false
+update-notification-timestamp=int64 1675464198
+
+[org/gnome/terminal/legacy]
+new-terminal-mode='window'
+theme-variant='system'
+
+[org/gnome/terminal/legacy/profiles:]
+list=['de8a9081-8352-4ce4-9519-5de655ad9361', '71a9971e-e829-43a9-9b2f-4565c855d664', '5083e06b-024e-46be-9cd2-892b814f1fc8', '95894cfd-82f7-430d-af6e-84d168bc34f5']
+
+[org/gnome/terminal/legacy/profiles:/:5083e06b-024e-46be-9cd2-892b814f1fc8]
+background-color='#24273a'
+cursor-background-color='#f4dbd6'
+cursor-colors-set=true
+cursor-foreground-color='#24273a'
+foreground-color='#cad3f5'
+highlight-background-color='#24273a'
+highlight-colors-set=true
+highlight-foreground-color='#5b6078'
+palette=['#494d64', '#ed8796', '#a6da95', '#eed49f', '#8aadf4', '#f5bde6', '#8bd5ca', '#b8c0e0', '#5b6078', '#ed8796', '#a6da95', '#eed49f', '#8aadf4', '#f5bde6', '#8bd5ca', '#a5adcb']
+use-theme-colors=false
+visible-name='Catppuccin Macchiato'
+
+[org/gnome/terminal/legacy/profiles:/:71a9971e-e829-43a9-9b2f-4565c855d664]
+background-color='#303446'
+cursor-background-color='#f2d5cf'
+cursor-colors-set=true
+cursor-foreground-color='#303446'
+foreground-color='#c6d0f5'
+highlight-background-color='#303446'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#51576d', '#e78284', '#a6d189', '#e5c890', '#8caaee', '#f4b8e4', '#81c8be', '#b5bfe2', '#626880', '#e78284', '#a6d189', '#e5c890', '#8caaee', '#f4b8e4', '#81c8be', '#a5adce']
+use-theme-colors=false
+visible-name='Catppuccin Frappe'
+
+[org/gnome/terminal/legacy/profiles:/:95894cfd-82f7-430d-af6e-84d168bc34f5]
+background-color='#1e1e2e'
+cursor-background-color='#f5e0dc'
+cursor-colors-set=true
+cursor-foreground-color='#1e1e2e'
+foreground-color='#cdd6f4'
+highlight-background-color='#1e1e2e'
+highlight-colors-set=true
+highlight-foreground-color='#585b70'
+palette=['#45475a', '#f38ba8', '#a6e3a1', '#f9e2af', '#89b4fa', '#f5c2e7', '#94e2d5', '#bac2de', '#585b70', '#f38ba8', '#a6e3a1', '#f9e2af', '#89b4fa', '#f5c2e7', '#94e2d5', '#a6adc8']
+use-theme-colors=false
+visible-name='Catppuccin Mocha'
+
+[org/gnome/terminal/legacy/profiles:/:de8a9081-8352-4ce4-9519-5de655ad9361]
+audible-bell=false
+background-color='#eff1f5'
+cursor-background-color='#dc8a78'
+cursor-colors-set=true
+cursor-foreground-color='#eff1f5'
+foreground-color='#4c4f69'
+highlight-background-color='#eff1f5'
+highlight-colors-set=true
+highlight-foreground-color='#acb0be'
+palette=['#5c5f77', '#d20f39', '#40a02b', '#df8e1d', '#1e66f5', '#ea76cb', '#179299', '#acb0be', '#6c6f85', '#d20f39', '#40a02b', '#df8e1d', '#1e66f5', '#ea76cb', '#179299', '#bcc0cc']
+use-theme-colors=false
+visible-name='Catppuccin Latte'
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=167
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-size=(850, 374)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(1.0, 0.0, 0.0, 1.0), (0.0, 0.0, 0.0, 0.53716200000000003), (0.32156862745098042, 0.10980392156862745, 0.050980392156862744, 0.53716200000000003), (0.32000000000000001, 0.10947747747747748, 0.049066666666666661, 0.53716200000000003), (0.054901960784313725, 0.0078431372549019607, 0.043137254901960784, 0.53716200000000003), (0.054901960784313725, 0.0078431372549019641, 0.043137254901960784, 0.53716216216216217), (0.054901960784313725, 0.0078431372549019607, 0.043137254901960784, 0.59797299999999998), (0.054901960784313725, 0.0078431372549019641, 0.043137254901960784, 0.59797297297297303)]
+selected-color=(true, 1.0, 0.0, 0.0, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(26, 23)
+window-size=(1231, 902)
+
+[system/proxy]
+mode='none'

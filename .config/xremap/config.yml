@@ -1,0 +1,24 @@
+keypress_delay_ms: 20
+modmap:
+  - name: ck61
+    remap: # Required
+      ESC: GRAVE
+      UP: SLASH
+      SLASH: UP
+      DOWN: DELETE
+      COMPOSE: DOWN
+      LEFT: RIGHTALT
+      RIGHTALT: LEFT
+      RIGHT: RIGHTCTRL
+      RIGHTCTRL: RIGHT 
+      CapsLock:
+        held: LEFTMETA
+        alone: ESC
+        alone_timeout_millis: 200
+keymap:
+  - name: ck61
+    remap:
+        C-h: LEFT
+        C-j: DOWN
+        C-k: UP
+        C-l: RIGHT

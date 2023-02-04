@@ -1,0 +1,13 @@
+[Unit]
+Description=Xremap bare minimum service
+After=default.target
+Requisite=default.target
+
+[Service]
+ExecStart=%h/.local/bin/xremap --watch=device %h/.config/xremap/config.yml
+Restart=always
+RestartForceExitStatus=1
+Type=simple
+
+[Install]
+WantedBy=default.target
