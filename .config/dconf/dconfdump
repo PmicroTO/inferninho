@@ -1,13 +1,20 @@
+[apps/seahorse/listing]
+keyrings-selected=['secret-service:///org/freedesktop/secrets/collection/Login']
+
+[apps/seahorse/windows/key-manager]
+height=1001
+width=2560
+
 [com/github/wwmm/easyeffects]
 last-used-input-preset='Presets'
 last-used-output-preset='Presets'
 window-fullscreen=false
 window-height=1048
 window-maximized=false
-window-width=2560
+window-width=640
 
 [com/github/wwmm/easyeffects/streaminputs]
-input-device='alsa_input.pci-0000_00_14.2.9.analog-stereo'
+input-device='alsa_input.usb-046d_C505_HD_Webcam_4B4301B0-02.mono-fallback'
 plugins=['rnnoise', 'stereo_tools']
 
 [com/github/wwmm/easyeffects/streaminputs/rnnoise]
@@ -18,7 +25,7 @@ bypass=false
 mode='LR > L+R (Mono Sum L+R)'
 
 [com/github/wwmm/easyeffects/streamoutputs]
-output-device='alsa_output.pci-0000_00_14.2.9.analog-stereo'
+output-device='alsa_output.pci-0000_00_14.2.analog-stereo'
 
 [com/mattjakeman/ExtensionManager]
 last-used-version='0.4.0'
@@ -44,7 +51,7 @@ video-y-resolution=960
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(1280, 1048, false)
+window-state=(2560, 1048, false)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', '26eca112-f338-488d-ab59-c28e52f9dd23', '58ee5463-5ab4-4a44-8004-785f25d6036c', '09777f85-9792-45f0-983f-96714d0a56d7', '46e2c987-9e26-4ad9-8c30-27ee649ce805', 'aace8d50-6f63-4431-967d-99d74c5b280c']
@@ -77,7 +84,7 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/aace8d50-6f63-4431-967d-99d74c5b280c]
-apps=['telegram-desktop_telegram-desktop.desktop', 'discord_discord.desktop', 'fluffychat_fluffychat.desktop']
+apps=['telegram-desktop_telegram-desktop.desktop', 'discord_discord.desktop', 'fluffychat_fluffychat.desktop', 'element-desktop_element-desktop.desktop']
 name='Internet'
 
 [org/gnome/desktop/background]
@@ -99,13 +106,19 @@ font-name='Liberation Sans 11'
 monospace-font-name='Liberation Mono 10'
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher']
+application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop']
+
+[org/gnome/desktop/notifications/application/element-desktop-element-desktop]
+application-id='element-desktop_element-desktop.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
@@ -200,7 +213,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(640, 1048)
+initial-size=(1280, 1048)
 
 [org/gnome/nm-applet/eap/3e25b40d-3f9d-43c9-939c-719a5c70bed6]
 ignore-ca-cert=false
@@ -218,14 +231,23 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/portal/filechooser/snap.element-desktop]
+last-folder-path='/home/lucio/Downloads'
+
+[org/gnome/portal/filechooser/snap.firefox]
+last-folder-path='/home/lucio/Downloads'
+
+[org/gnome/portal/filechooser/snap.fluffychat]
+last-folder-path='/home/lucio'
+
 [org/gnome/portal/filechooser/snap.telegram-desktop]
-last-folder-path='/home/lucio/Pictures/pfp'
+last-folder-path='/home/lucio/Downloads'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 email=['<Super>m']
 www=['<Super>b']
 
@@ -234,15 +256,20 @@ binding='<Super>a'
 command='ulauncher-toggle'
 name='ulauncher'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>Return'
+command='alacritty'
+name='TERM'
+
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='interactive'
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'org.gnome.Terminal.desktop': <{'position': <4>}>, 'Utilities': <{'position': <5>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <6>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <7>}>, 'firefox_firefox.desktop': <{'position': <8>}>}]
+app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, 'Alacritty.desktop': <{'position': <6>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <7>}>, 'firefox_firefox.desktop': <{'position': <8>}>}]
 disabled-extensions=['just-perfection-desktop@just-perfection', 'background-logo@fedorahosted.org']
-enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt']
+enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt', 'trayIconsReloaded@selfmade.pl', 'no-overview@fthx']
 welcome-dialog-last-shown-version='43.2'
 
 [org/gnome/shell/extensions/bedtime-mode]
@@ -292,6 +319,10 @@ gap-inner=uint32 0
 gap-outer=uint32 0
 hint-color-rgba='rgb(255,0,0)'
 tile-by-default=true
+tile-enter=@as []
+
+[org/gnome/shell/extensions/trayIconsReloaded]
+invoke-to-workspace=false
 
 [org/gnome/shell/keybindings]
 toggle-application-view=@as []
@@ -300,8 +331,9 @@ toggle-application-view=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1675516542
+check-timestamp=int64 1675601206
 first-run=false
+online-updates-timestamp=int64 1675601250
 update-notification-timestamp=int64 1675464198
 
 [org/gnome/terminal/legacy]
@@ -374,11 +406,11 @@ show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=167
-sort-column='name'
+sort-column='modified'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
-window-size=(850, 374)
+window-size=(669, 1048)
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(1.0, 0.0, 0.0, 1.0), (0.0, 0.0, 0.0, 0.53716200000000003), (0.32156862745098042, 0.10980392156862745, 0.050980392156862744, 0.53716200000000003), (0.32000000000000001, 0.10947747747747748, 0.049066666666666661, 0.53716200000000003), (0.054901960784313725, 0.0078431372549019607, 0.043137254901960784, 0.53716200000000003), (0.054901960784313725, 0.0078431372549019641, 0.043137254901960784, 0.53716216216216217), (0.054901960784313725, 0.0078431372549019607, 0.043137254901960784, 0.59797299999999998), (0.054901960784313725, 0.0078431372549019641, 0.043137254901960784, 0.59797297297297303)]
@@ -390,12 +422,12 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=157
+sidebar-width=248
 sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(664, 81)
 window-size=(1231, 902)
 
 [system/proxy]

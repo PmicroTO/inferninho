@@ -1,14 +1,11 @@
 [Unit]
-Description=Xremap bare minimum service
-After=default.target
+Description=Xremap service
+After=gnome-default.target
 Requisite=default.target
 
 [Service]
 ExecStart=%h/.local/bin/xremap --watch=device %h/.config/xremap/config.yml
-Restart=always
-RestartForceExitStatus=1
-RestartSec=1000ms
-Type=simple
+Restart=aways
 
 [Install]
 WantedBy=default.target
