@@ -14,7 +14,7 @@ window-maximized=false
 window-width=640
 
 [com/github/wwmm/easyeffects/streaminputs]
-input-device='alsa_input.usb-046d_C505_HD_Webcam_4B4301B0-02.mono-fallback'
+input-device='alsa_input.pci-0000_00_14.2.analog-stereo'
 plugins=['rnnoise', 'stereo_tools']
 
 [com/github/wwmm/easyeffects/streaminputs/rnnoise]
@@ -106,7 +106,7 @@ font-name='Liberation Sans 11'
 monospace-font-name='Liberation Mono 10'
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop']
+application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog']
 
 [org/gnome/desktop/notifications/application/element-desktop-element-desktop]
 application-id='element-desktop_element-desktop.desktop'
@@ -122,6 +122,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -164,7 +167,7 @@ toggle-fullscreen=['<Super>0']
 toggle-maximized=@as []
 
 [org/gnome/evince/default]
-window-ratio=(1.0750520547763884, 1.2447737911072885)
+window-ratio=(2.1501041095527769, 1.2447737911072885)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -213,7 +216,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1280, 1048)
+initial-size=(640, 1048)
 
 [org/gnome/nm-applet/eap/3e25b40d-3f9d-43c9-939c-719a5c70bed6]
 ignore-ca-cert=false
@@ -235,13 +238,13 @@ ignore-phase2-ca-cert=false
 last-folder-path='/home/lucio/Downloads'
 
 [org/gnome/portal/filechooser/snap.firefox]
-last-folder-path='/home/lucio/Downloads'
+last-folder-path='/home/lucio/Pictures'
 
 [org/gnome/portal/filechooser/snap.fluffychat]
 last-folder-path='/home/lucio'
 
 [org/gnome/portal/filechooser/snap.telegram-desktop]
-last-folder-path='/home/lucio/Downloads'
+last-folder-path='/home/lucio/Pictures/Screenshots'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
