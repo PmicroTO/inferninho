@@ -270,9 +270,10 @@ sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, 'Alacritty.desktop': <{'position': <6>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <7>}>, 'firefox_firefox.desktop': <{'position': <8>}>}]
+app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <6>}>, 'firefox_firefox.desktop': <{'position': <7>}>, 'org.gnome.Nautilus.desktop': <{'position': <8>}>, 'gimp_gimp.desktop': <{'position': <9>}>, 'org.gnome.Software.desktop': <{'position': <10>}>}]
 disabled-extensions=['just-perfection-desktop@just-perfection', 'background-logo@fedorahosted.org']
 enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt', 'trayIconsReloaded@selfmade.pl', 'no-overview@fthx']
+favorite-apps=['Alacritty.desktop', 'codium_codium.desktop']
 welcome-dialog-last-shown-version='43.2'
 
 [org/gnome/shell/extensions/bedtime-mode]
