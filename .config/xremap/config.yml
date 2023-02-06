@@ -10,7 +10,7 @@ modmap:
       LEFT: RIGHTALT
       RIGHTALT: LEFT
       RIGHT: RIGHTCTRL
-      RIGHTCTRL: RIGHT 
+      RIGHTCTRL: RIGHT
       CapsLock:
         held: LEFTMETA
         alone: ESC

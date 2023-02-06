@@ -14,7 +14,7 @@ window-maximized=false
 window-width=640
 
 [com/github/wwmm/easyeffects/streaminputs]
-input-device='alsa_input.pci-0000_00_14.2.analog-stereo'
+input-device='alsa_input.usb-046d_C505_HD_Webcam_4B4301B0-02.mono-fallback'
 plugins=['rnnoise', 'stereo_tools']
 
 [com/github/wwmm/easyeffects/streaminputs/rnnoise]
@@ -51,10 +51,10 @@ video-y-resolution=960
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(2560, 1048, false)
+window-state=(1280, 1048, false)
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', '26eca112-f338-488d-ab59-c28e52f9dd23', '58ee5463-5ab4-4a44-8004-785f25d6036c', '09777f85-9792-45f0-983f-96714d0a56d7', '46e2c987-9e26-4ad9-8c30-27ee649ce805', 'aace8d50-6f63-4431-967d-99d74c5b280c']
+folder-children=['Utilities', 'YaST', '26eca112-f338-488d-ab59-c28e52f9dd23', '58ee5463-5ab4-4a44-8004-785f25d6036c', '09777f85-9792-45f0-983f-96714d0a56d7', '46e2c987-9e26-4ad9-8c30-27ee649ce805', 'aace8d50-6f63-4431-967d-99d74c5b280c', 'f66cad8f-e7e1-4e0c-8d13-cf5265bccd65']
 
 [org/gnome/desktop/app-folders/folders/09777f85-9792-45f0-983f-96714d0a56d7]
 apps=['org.gnome.Settings.desktop', 'com.github.wwmm.easyeffects.desktop', 'calf.desktop', 'ulauncher.desktop']
@@ -87,6 +87,10 @@ translate=true
 apps=['telegram-desktop_telegram-desktop.desktop', 'discord_discord.desktop', 'fluffychat_fluffychat.desktop', 'element-desktop_element-desktop.desktop']
 name='Internet'
 
+[org/gnome/desktop/app-folders/folders/f66cad8f-e7e1-4e0c-8d13-cf5265bccd65]
+apps=['timekpr-admin.desktop', 'timekpr-admin-su.desktop']
+name='Unnamed Folder'
+
 [org/gnome/desktop/background]
 picture-options='zoom'
 picture-uri='/home/lucio/.config/background'
@@ -106,10 +110,16 @@ font-name='Liberation Sans 11'
 monospace-font-name='Liberation Mono 10'
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog']
+application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog', 'firefox-firefox', 'alacritty', 'telegram-desktop-telegram-desktop']
+
+[org/gnome/desktop/notifications/application/alacritty]
+application-id='Alacritty.desktop'
 
 [org/gnome/desktop/notifications/application/element-desktop-element-desktop]
 application-id='element-desktop_element-desktop.desktop'
+
+[org/gnome/desktop/notifications/application/firefox-firefox]
+application-id='firefox_firefox.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -137,6 +147,9 @@ application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/telegram-desktop-telegram-desktop]
+application-id='telegram-desktop_telegram-desktop.desktop'
 
 [org/gnome/desktop/notifications/application/ulauncher]
 application-id='ulauncher.desktop'
@@ -192,9 +205,9 @@ window-width=640
 current-tab='processes'
 maximized=false
 network-total-in-bits=false
-show-dependencies=false
+show-dependencies=true
 show-whose-processes='user'
-window-state=(1280, 1048, 20, 20)
+window-state=(2560, 1048, 0, 32)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -216,7 +229,8 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(640, 1048)
+initial-size=(1280, 1048)
+maximized=false
 
 [org/gnome/nm-applet/eap/3e25b40d-3f9d-43c9-939c-719a5c70bed6]
 ignore-ca-cert=false
@@ -238,7 +252,7 @@ ignore-phase2-ca-cert=false
 last-folder-path='/home/lucio/Downloads'
 
 [org/gnome/portal/filechooser/snap.firefox]
-last-folder-path='/home/lucio/Pictures'
+last-folder-path='/home/lucio/Downloads'
 
 [org/gnome/portal/filechooser/snap.fluffychat]
 last-folder-path='/home/lucio'
@@ -252,6 +266,10 @@ night-light-enabled=true
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 email=['<Super>m']
+mic-mute=['<Alt><Super>BackSpace']
+volume-down=['<Super>minus']
+volume-mute=['<Super>BackSpace']
+volume-up=['<Super>equal']
 www=['<Super>b']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
@@ -270,7 +288,7 @@ sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <6>}>, 'firefox_firefox.desktop': <{'position': <7>}>, 'org.gnome.Nautilus.desktop': <{'position': <8>}>, 'gimp_gimp.desktop': <{'position': <9>}>, 'org.gnome.Software.desktop': <{'position': <10>}>}]
+app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <6>}>, 'firefox_firefox.desktop': <{'position': <7>}>, 'org.gnome.Nautilus.desktop': <{'position': <8>}>, 'gimp_gimp.desktop': <{'position': <9>}>, 'org.gnome.Software.desktop': <{'position': <10>}>, 'vlc_vlc.desktop': <{'position': <11>}>, 'f66cad8f-e7e1-4e0c-8d13-cf5265bccd65': <{'position': <12>}>}]
 disabled-extensions=['just-perfection-desktop@just-perfection', 'background-logo@fedorahosted.org']
 enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt', 'trayIconsReloaded@selfmade.pl', 'no-overview@fthx']
 favorite-apps=['Alacritty.desktop', 'codium_codium.desktop']
@@ -335,10 +353,11 @@ toggle-application-view=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1675601206
+check-timestamp=int64 1675677241
 first-run=false
+install-timestamp=int64 1675643852
 online-updates-timestamp=int64 1675601250
-update-notification-timestamp=int64 1675464198
+update-notification-timestamp=int64 1675677218
 
 [org/gnome/terminal/legacy]
 new-terminal-mode='window'
@@ -406,7 +425,7 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=167
