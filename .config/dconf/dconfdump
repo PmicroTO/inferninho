@@ -53,6 +53,9 @@ video-y-resolution=960
 last-panel='keyboard'
 window-state=(1280, 1048, false)
 
+[org/gnome/desktop/a11y/magnifier]
+mag-factor=1.0
+
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', '26eca112-f338-488d-ab59-c28e52f9dd23', '58ee5463-5ab4-4a44-8004-785f25d6036c', '09777f85-9792-45f0-983f-96714d0a56d7', '46e2c987-9e26-4ad9-8c30-27ee649ce805', 'aace8d50-6f63-4431-967d-99d74c5b280c', 'f66cad8f-e7e1-4e0c-8d13-cf5265bccd65']
 
