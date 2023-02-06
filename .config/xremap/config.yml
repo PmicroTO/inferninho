@@ -18,7 +18,7 @@ modmap:
 keymap:
   - name: ck61
     remap:
-        C-h: LEFT
-        C-j: DOWN
-        C-k: UP
-        C-l: RIGHT
+        Ctrl_L-h: LEFT
+        Ctrl_L-j: DOWN
+        Ctrl_L-k: UP
+        Ctrl_L-l: RIGHT
