@@ -113,7 +113,7 @@ font-name='Liberation Sans 11'
 monospace-font-name='Liberation Mono 10'
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog', 'firefox-firefox', 'alacritty', 'telegram-desktop-telegram-desktop']
+application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog', 'firefox-firefox', 'alacritty', 'telegram-desktop-telegram-desktop', 'io-snapcraft-sessionagent']
 
 [org/gnome/desktop/notifications/application/alacritty]
 application-id='Alacritty.desktop'
@@ -132,6 +132,9 @@ application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/io-snapcraft-sessionagent]
+application-id='io.snapcraft.SessionAgent.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
@@ -181,6 +184,9 @@ switch-to-workspace-3=['<Super>3']
 switch-to-workspace-4=['<Super>4']
 toggle-fullscreen=['<Super>0']
 toggle-maximized=@as []
+
+[org/gnome/desktop/wm/preferences]
+focus-mode='sloppy'
 
 [org/gnome/evince/default]
 window-ratio=(2.1501041095527769, 1.2447737911072885)
@@ -255,7 +261,7 @@ ignore-phase2-ca-cert=false
 last-folder-path='/home/lucio/Downloads'
 
 [org/gnome/portal/filechooser/snap.firefox]
-last-folder-path='/home/lucio/Pictures/pfp'
+last-folder-path='/home/lucio/Downloads'
 
 [org/gnome/portal/filechooser/snap.fluffychat]
 last-folder-path='/home/lucio'
@@ -299,7 +305,7 @@ welcome-dialog-last-shown-version='43.2'
 
 [org/gnome/shell/extensions/bedtime-mode]
 bedtime-mode-active=true
-color-tone-factor=80
+color-tone-factor=100
 ondemand-button-location='menu'
 
 [org/gnome/shell/extensions/display-brightness-ddcutil]
@@ -356,10 +362,10 @@ toggle-application-view=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1675677241
+check-timestamp=int64 1675775215
 first-run=false
 install-timestamp=int64 1675643852
-online-updates-timestamp=int64 1675601250
+online-updates-timestamp=int64 1675775231
 update-notification-timestamp=int64 1675677218
 
 [org/gnome/terminal/legacy]
