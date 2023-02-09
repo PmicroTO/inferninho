@@ -6,15 +6,17 @@ height=1001
 width=2560
 
 [com/github/wwmm/easyeffects]
+bypass=false
 last-used-input-preset='Presets'
 last-used-output-preset='Presets'
+process-all-inputs=true
 window-fullscreen=false
 window-height=1048
 window-maximized=false
-window-width=640
+window-width=1280
 
 [com/github/wwmm/easyeffects/streaminputs]
-input-device='alsa_input.usb-046d_C505_HD_Webcam_4B4301B0-02.mono-fallback'
+input-device='alsa_input.pci-0000_00_14.2.21.analog-stereo'
 plugins=['rnnoise', 'stereo_tools']
 
 [com/github/wwmm/easyeffects/streaminputs/rnnoise]
@@ -25,7 +27,7 @@ bypass=false
 mode='LR > L+R (Mono Sum L+R)'
 
 [com/github/wwmm/easyeffects/streamoutputs]
-output-device='alsa_output.pci-0000_00_14.2.analog-stereo'
+output-device='alsa_output.pci-0000_00_14.2.21.analog-stereo'
 
 [com/mattjakeman/ExtensionManager]
 last-used-version='0.4.0'
@@ -51,10 +53,10 @@ video-y-resolution=960
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(1280, 1048, false)
+window-state=(640, 262, false)
 
 [org/gnome/desktop/a11y/magnifier]
-mag-factor=1.0
+mag-factor=4.0
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', '26eca112-f338-488d-ab59-c28e52f9dd23', '58ee5463-5ab4-4a44-8004-785f25d6036c', '09777f85-9792-45f0-983f-96714d0a56d7', '46e2c987-9e26-4ad9-8c30-27ee649ce805', 'aace8d50-6f63-4431-967d-99d74c5b280c', 'f66cad8f-e7e1-4e0c-8d13-cf5265bccd65']
@@ -68,7 +70,7 @@ apps=['org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Cheese
 name='Accessories'
 
 [org/gnome/desktop/app-folders/folders/46e2c987-9e26-4ad9-8c30-27ee649ce805]
-apps=['thunderbird_thunderbird.desktop', 'org.gnome.Pomodoro.desktop', 'codium_codium.desktop']
+apps=['thunderbird_thunderbird.desktop', 'org.gnome.Pomodoro.desktop', 'codium_codium.desktop', 'mozilla-thunderbird.desktop']
 name='Unnamed Folder'
 
 [org/gnome/desktop/app-folders/folders/58ee5463-5ab4-4a44-8004-785f25d6036c]
@@ -87,7 +89,7 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/aace8d50-6f63-4431-967d-99d74c5b280c]
-apps=['telegram-desktop_telegram-desktop.desktop', 'discord_discord.desktop', 'fluffychat_fluffychat.desktop', 'element-desktop_element-desktop.desktop']
+apps=['telegram-desktop_telegram-desktop.desktop', 'discord_discord.desktop', 'fluffychat_fluffychat.desktop', 'element-desktop_element-desktop.desktop', 'telegramdesktop.desktop', 'discord.desktop']
 name='Internet'
 
 [org/gnome/desktop/app-folders/folders/f66cad8f-e7e1-4e0c-8d13-cf5265bccd65]
@@ -113,7 +115,7 @@ font-name='Liberation Sans 11'
 monospace-font-name='Liberation Mono 10'
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog', 'firefox-firefox', 'alacritty', 'telegram-desktop-telegram-desktop', 'io-snapcraft-sessionagent']
+application-children=['org-gnome-terminal', 'firefox', 'gnome-network-panel', 'org-gnome-settings', 'org-freedesktop-problems-applet', 'org-gnome-software', 'org-gnome-nautilus', 'ulauncher', 'gnome-power-panel', 'element-desktop-element-desktop', 'org-gnome-eog', 'firefox-firefox', 'alacritty', 'telegram-desktop-telegram-desktop', 'io-snapcraft-sessionagent', 'mozilla-thunderbird']
 
 [org/gnome/desktop/notifications/application/alacritty]
 application-id='Alacritty.desktop'
@@ -135,6 +137,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/io-snapcraft-sessionagent]
 application-id='io.snapcraft.SessionAgent.desktop'
+
+[org/gnome/desktop/notifications/application/mozilla-thunderbird]
+application-id='mozilla-thunderbird.desktop'
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
@@ -211,7 +216,7 @@ window-height=1001
 window-width=640
 
 [org/gnome/gnome-system-monitor]
-current-tab='processes'
+current-tab='resources'
 maximized=false
 network-total-in-bits=false
 show-dependencies=true
@@ -238,7 +243,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1280, 1048)
+initial-size=(2560, 1048)
 maximized=false
 
 [org/gnome/nm-applet/eap/3e25b40d-3f9d-43c9-939c-719a5c70bed6]
@@ -257,6 +262,27 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/pomodoro/plugins/actions]
+actions-list=['/org/gnome/pomodoro/plugins/actions/action0/']
+
+[org/gnome/pomodoro/plugins/actions/action0]
+command='playerctl pause'
+name='pause'
+states=['short-break', 'long-break']
+triggers=['start']
+
+[org/gnome/pomodoro/preferences]
+enabled-plugins=['sounds', 'actions', 'notifications']
+
+[org/gnome/pomodoro/state]
+timer-date='2023-02-09T10:18:19+0000'
+timer-elapsed=0.0
+timer-paused=false
+timer-score=0.0
+timer-state='pomodoro'
+timer-state-date='2023-02-09T10:18:19+0000'
+timer-state-duration=1500.0
+
 [org/gnome/portal/filechooser/snap.element-desktop]
 last-folder-path='/home/lucio/Downloads'
 
@@ -267,7 +293,7 @@ last-folder-path='/home/lucio/Downloads'
 last-folder-path='/home/lucio'
 
 [org/gnome/portal/filechooser/snap.telegram-desktop]
-last-folder-path='/home/lucio/Pictures/Screenshots'
+last-folder-path='/etc/udev/rules.d'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -297,28 +323,28 @@ sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <6>}>, 'firefox_firefox.desktop': <{'position': <7>}>, 'org.gnome.Nautilus.desktop': <{'position': <8>}>, 'gimp_gimp.desktop': <{'position': <9>}>, 'org.gnome.Software.desktop': <{'position': <10>}>, 'vlc_vlc.desktop': <{'position': <11>}>, 'f66cad8f-e7e1-4e0c-8d13-cf5265bccd65': <{'position': <12>}>}]
+app-picker-layout=[{'container-inferno.desktop': <{'position': <0>}>, '26eca112-f338-488d-ab59-c28e52f9dd23': <{'position': <1>}>, '09777f85-9792-45f0-983f-96714d0a56d7': <{'position': <2>}>, 'org.gnome.Boxes.desktop': <{'position': <3>}>, 'Utilities': <{'position': <4>}>, 'aace8d50-6f63-4431-967d-99d74c5b280c': <{'position': <5>}>, '46e2c987-9e26-4ad9-8c30-27ee649ce805': <{'position': <6>}>, 'firefox_firefox.desktop': <{'position': <7>}>, 'org.gnome.Nautilus.desktop': <{'position': <8>}>, 'calibre-gui.desktop': <{'position': <9>}>, 'org.gnome.Software.desktop': <{'position': <10>}>, 'com.stremio.Stremio.desktop': <{'position': <11>}>, 'f66cad8f-e7e1-4e0c-8d13-cf5265bccd65': <{'position': <12>}>, 'org.gnome.Totem.desktop': <{'position': <13>}>}]
 disabled-extensions=['just-perfection-desktop@just-perfection', 'background-logo@fedorahosted.org']
-enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt', 'trayIconsReloaded@selfmade.pl', 'no-overview@fthx']
+enabled-extensions=['gnomebedtime@ionutbortis.gmail.com', 'display-brightness-ddcutil@themightydeity.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'xremap@k0kubun.com', 'unredirect@vaina.lt', 'trayIconsReloaded@selfmade.pl', 'no-overview@fthx', 'pomodoro@arun.codito.in']
 favorite-apps=['Alacritty.desktop', 'codium_codium.desktop']
 welcome-dialog-last-shown-version='43.2'
 
 [org/gnome/shell/extensions/bedtime-mode]
 bedtime-mode-active=true
-color-tone-factor=100
+color-tone-factor=70
 ondemand-button-location='menu'
 
 [org/gnome/shell/extensions/display-brightness-ddcutil]
 button-location=1
 ddcutil-sleep-multiplier=40.0
-decrease-brightness-shortcut=['<Control>XF86MonBrightnessDown']
+decrease-brightness-shortcut=['<Shift><Super>underscore']
 hide-system-indicator=true
-increase-brightness-shortcut=['<Control>XF86MonBrightnessUp']
+increase-brightness-shortcut=['<Shift><Super>plus']
 position-system-menu=3.0
 show-all-slider=false
 show-display-name=false
 show-osd=false
-step-change-keyboard=2.0
+step-change-keyboard=10.0
 
 [org/gnome/shell/extensions/just-perfection]
 accessibility-menu=false
@@ -362,7 +388,7 @@ toggle-application-view=@as []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1675775215
+check-timestamp=int64 1675933743
 first-run=false
 install-timestamp=int64 1675643852
 online-updates-timestamp=int64 1675775231
@@ -434,7 +460,7 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=167
