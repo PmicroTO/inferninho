@@ -1,0 +1,31 @@
+theme = "acme"
+
+[editor]
+#auto-pairs = false
+line-number = "relative"
+gutters = ["diagnostics", "line-numbers", "spacer"]
+true-color = true
+shell = ["fish", "-i",  "-c"]
+color-modes = true
+
+[editor.statusline]
+center = ["spinner", "diagnostics"]
+left = ["mode", "file-name", "file-type", "file-encoding"]
+right = ["selections", "file-line-ending", "position"]
+separator = "|"
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 0
+
+[editor.whitespace]
+render = "all"
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+"!" = "shell_append_output"
+"A-!" = "shell_insert_output"
+

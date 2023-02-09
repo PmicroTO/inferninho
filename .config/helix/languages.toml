@@ -1,0 +1,21 @@
+[[language]]
+name = "python"
+auto-format = true
+diagnostic-severity = "Hint"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "yapf", args = ["--style", "google"] }
+
+[[language]]
+name = "nix"
+auto-format = true
+indent = { tab-width = 4, unit = "    "  }
+formatter = { command = "nixfmt" }
+
+[[language]]
+name = "plaintext"
+scope = "source.txt"
+file-types = ["txt"]
+roots = []
+indent = { tab-width = 4, unit = "    " }
+auto-format = true
+formatter = { command = "fmt", args = ["-w", "90"] }
