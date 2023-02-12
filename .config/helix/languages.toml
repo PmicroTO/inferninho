@@ -17,5 +17,5 @@ scope = "source.txt"
 file-types = ["txt"]
 roots = []
 indent = { tab-width = 4, unit = "    " }
-auto-format = true
+auto-format = false
 formatter = { command = "fmt", args = ["-w", "90"] }
